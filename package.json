@@ -1,0 +1,29 @@
+{
+  "name": "@datagica/parse-phones",
+  "version": "0.0.3",
+  "description": "Extract multiple phone numbers from a document",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --harmony --bail --require chai tests/*.js"
+  },
+  "author": "Julian Bilcke <julian.bilcke@datagica.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datagica/parse-phones.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@datagica/tokenize": "^0.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "chai-fuzzy": "^1.6.1",
+    "deep-eql": "^2.0.2",
+    "lodash": "^4.17.4",
+    "mocha": "^3.5.0",
+    "underscore": "^1.8.3"
+  }
+}
