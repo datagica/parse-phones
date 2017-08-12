@@ -1,6 +1,6 @@
 {
   "name": "@datagica/parse-phones",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Extract multiple phone numbers from a document",
   "main": "./lib/index.js",
   "scripts": {

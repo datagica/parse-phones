@@ -13,6 +13,22 @@ describe('@datagica/parse-phones', () => {
 			// TODO FIXME our regex fail to parse "19-49-89-636-48018"
 
 			var phoneNumbers = [
+        {
+          input: `31-12-2014`, // because probably not a phone number
+          output: []
+        },
+        {
+          input: `12-31-2014`, // because probably not a phone number
+          output: []
+        },
+        {
+          input: `2014-31-12`, // because probably not a phone number
+          output: []
+        },
+        {
+					input: `2014-12-31`, // because probably not a phone number
+					output: []
+        },
 				{
 					input: `754-3010`,
 					output: [
