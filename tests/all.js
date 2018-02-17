@@ -381,7 +381,40 @@ describe('@datagica/parse-phones', () => {
 					input: `1999-2001`,
 					output: []
 				}, {
+					input: `19701999`,
+					output: []
+				}, {
+					input: `19702020`,
+					output: []
+				}, {
+					input: `1970-198`,
+					output: []
+				}, {
+					input: `1970-980`,
+					output: []
+				}, {
+					input: `1970198`,
+					output: []
+				}, {
+					input: `1970980`,
+					output: []
+				}, {
 					input: `20142015`,
+					output: []
+				}, {
+					input: `2014-2015`,
+					output: []
+				}, {
+					input: `2014-015`,
+					output: []
+				}, {
+					input: `2014-201`,
+					output: []
+				}, {
+					input: `2014015`,
+					output: []
+				}, {
+					input: `2014201`,
 					output: []
 				}
 			]
