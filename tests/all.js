@@ -377,46 +377,36 @@ describe('@datagica/parse-phones', () => {
 							}
 						}
 					]
-				}, {
-					input: `1999-2001`,
-					output: []
-				}, {
-					input: `19701999`,
-					output: []
-				}, {
-					input: `19702020`,
-					output: []
-				}, {
-					input: `1970-198`,
-					output: []
-				}, {
-					input: `1970-980`,
-					output: []
-				}, {
-					input: `1970198`,
-					output: []
-				}, {
-					input: `1970980`,
-					output: []
-				}, {
-					input: `20142015`,
-					output: []
-				}, {
-					input: `2014-2015`,
-					output: []
-				}, {
-					input: `2014-015`,
-					output: []
-				}, {
-					input: `2014-201`,
-					output: []
-				}, {
-					input: `2014015`,
-					output: []
-				}, {
-					input: `2014201`,
-					output: []
-				}
+				},
+				// most countries now have > 7 or 8 digits phone number
+				// for those who don't, it is problematic because these
+				// numbers might look like a date when badly formatted 
+				// in a PDF file.. so we try to check if they are date
+				{ input: `1999-2001`, output: [] },
+				{ input: `19701999`, output: [] },
+				{ input: `19702020`, output: [] },
+				{ input: `1970-198`, output: [] },
+				{ input: `1970-980`, output: [] },
+				{ input: `1970198`, output: [] },
+				{ input: `1970980`, output: [] },
+				{ input: `20142015`, output: [] },
+				{ input: `2014-2015`, output: [] },
+				{ input: `2014-015`, output: [] },
+				{ input: `2014-201`, output: [] },
+				{ input: `2014015`, output: [] },
+				{	input: `2014201`, output: [] },
+				{ input: `2001-1999`, output: [] },
+				{ input: `20011999`, output: [] },
+				{ input: `20201970`, output: [] },
+				{ input: `1980-197`, output: [] },
+				{ input: `1980-970`, output: [] },
+				{ input: `1980197`, output: [] },
+				{ input: `1980970`, output: [] },
+				{ input: `20152014`, output: [] },
+				{ input: `2015-2014`, output: [] },
+				{ input: `2014-013`, output: [] },
+				{ input: `2015014`, output: [] },
+				{	input: `2014200`, output: [] },
 			]
 			/* ,{
         input: `+33 (0) 6 48 14 88 65`,
