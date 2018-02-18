@@ -394,7 +394,7 @@ describe('@datagica/parse-phones', () => {
 				{ input: `2014-015`, output: [] },
 				{ input: `2014-201`, output: [] },
 				{ input: `2014015`, output: [] },
-				{	input: `2014201`, output: [] },
+				{ input: `2014201`, output: [] },
 				{ input: `2001-1999`, output: [] },
 				{ input: `20011999`, output: [] },
 				{ input: `20201970`, output: [] },
@@ -406,8 +406,8 @@ describe('@datagica/parse-phones', () => {
 				{ input: `2015-2014`, output: [] },
 				{ input: `2014-013`, output: [] },
 				{ input: `2015014`, output: [] },
-				{	input: `2014200`, output: [] },
-			]
+				{ input: `2014200`, output: [] },
+		  ]
 			/* ,{
         input: `+33 (0) 6 48 14 88 65`,
         output: [{
